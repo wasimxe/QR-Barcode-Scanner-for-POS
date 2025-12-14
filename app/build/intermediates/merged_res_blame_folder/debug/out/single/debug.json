@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.scanner.app-merged_res-58:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.scanner.app-main-60:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.scanner.app-merged_res-58:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.scanner.app-main-60:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.scanner.app-merged_res-58:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.scanner.app-main-60:/drawable/ic_launcher_foreground.xml"
+    }
+]

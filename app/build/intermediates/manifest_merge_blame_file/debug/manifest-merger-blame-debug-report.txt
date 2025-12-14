@@ -1,0 +1,282 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.scanner.app"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- Camera permission for scanning -->
+12    <uses-feature
+12-->D:\workspace\android\Projects\scanner\app\src\main\AndroidManifest.xml:6:5-8:35
+13        android:name="android.hardware.camera"
+13-->D:\workspace\android\Projects\scanner\app\src\main\AndroidManifest.xml:7:9-47
+14        android:required="true" />
+14-->D:\workspace\android\Projects\scanner\app\src\main\AndroidManifest.xml:8:9-32
+15    <uses-feature
+15-->D:\workspace\android\Projects\scanner\app\src\main\AndroidManifest.xml:9:5-11:36
+16        android:name="android.hardware.camera.autofocus"
+16-->D:\workspace\android\Projects\scanner\app\src\main\AndroidManifest.xml:10:9-57
+17        android:required="false" />
+17-->D:\workspace\android\Projects\scanner\app\src\main\AndroidManifest.xml:11:9-33
+18
+19    <uses-permission android:name="android.permission.CAMERA" />
+19-->D:\workspace\android\Projects\scanner\app\src\main\AndroidManifest.xml:13:5-65
+19-->D:\workspace\android\Projects\scanner\app\src\main\AndroidManifest.xml:13:22-62
+20    <uses-permission android:name="android.permission.VIBRATE" />
+20-->D:\workspace\android\Projects\scanner\app\src\main\AndroidManifest.xml:14:5-66
+20-->D:\workspace\android\Projects\scanner\app\src\main\AndroidManifest.xml:14:22-63
+21    <uses-permission android:name="android.permission.INTERNET" />
+21-->D:\workspace\android\Projects\scanner\app\src\main\AndroidManifest.xml:15:5-67
+21-->D:\workspace\android\Projects\scanner\app\src\main\AndroidManifest.xml:15:22-64
+22    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+22-->D:\workspace\android\Projects\scanner\app\src\main\AndroidManifest.xml:16:5-76
+22-->D:\workspace\android\Projects\scanner\app\src\main\AndroidManifest.xml:16:22-73
+23    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+23-->D:\workspace\android\Projects\scanner\app\src\main\AndroidManifest.xml:17:5-79
+23-->D:\workspace\android\Projects\scanner\app\src\main\AndroidManifest.xml:17:22-76
+24
+25    <permission
+25-->[androidx.core:core:1.12.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\71ad5ba16439d09779a31f18d599110b\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+26        android:name="com.scanner.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+26-->[androidx.core:core:1.12.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\71ad5ba16439d09779a31f18d599110b\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+27        android:protectionLevel="signature" />
+27-->[androidx.core:core:1.12.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\71ad5ba16439d09779a31f18d599110b\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+28
+29    <uses-permission android:name="com.scanner.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+29-->[androidx.core:core:1.12.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\71ad5ba16439d09779a31f18d599110b\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+29-->[androidx.core:core:1.12.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\71ad5ba16439d09779a31f18d599110b\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+30
+31    <application
+31-->D:\workspace\android\Projects\scanner\app\src\main\AndroidManifest.xml:19:5-44:19
+32        android:allowBackup="true"
+32-->D:\workspace\android\Projects\scanner\app\src\main\AndroidManifest.xml:20:9-35
+33        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+33-->[androidx.core:core:1.12.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\71ad5ba16439d09779a31f18d599110b\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+34        android:debuggable="true"
+35        android:extractNativeLibs="false"
+36        android:hardwareAccelerated="true"
+36-->D:\workspace\android\Projects\scanner\app\src\main\AndroidManifest.xml:26:9-43
+37        android:icon="@mipmap/ic_launcher"
+37-->D:\workspace\android\Projects\scanner\app\src\main\AndroidManifest.xml:21:9-43
+38        android:label="@string/app_name"
+38-->D:\workspace\android\Projects\scanner\app\src\main\AndroidManifest.xml:22:9-41
+39        android:roundIcon="@mipmap/ic_launcher_round"
+39-->D:\workspace\android\Projects\scanner\app\src\main\AndroidManifest.xml:23:9-54
+40        android:supportsRtl="true"
+40-->D:\workspace\android\Projects\scanner\app\src\main\AndroidManifest.xml:24:9-35
+41        android:theme="@style/Theme.QRScannerPro" >
+41-->D:\workspace\android\Projects\scanner\app\src\main\AndroidManifest.xml:25:9-50
+42        <activity
+42-->D:\workspace\android\Projects\scanner\app\src\main\AndroidManifest.xml:29:9-38:20
+43            android:name="com.scanner.app.MainActivity"
+43-->D:\workspace\android\Projects\scanner\app\src\main\AndroidManifest.xml:30:13-41
+44            android:configChanges="orientation|screenSize|keyboardHidden"
+44-->D:\workspace\android\Projects\scanner\app\src\main\AndroidManifest.xml:33:13-74
+45            android:exported="true"
+45-->D:\workspace\android\Projects\scanner\app\src\main\AndroidManifest.xml:31:13-36
+46            android:theme="@style/Theme.QRScannerPro" >
+46-->D:\workspace\android\Projects\scanner\app\src\main\AndroidManifest.xml:32:13-54
+47            <intent-filter>
+47-->D:\workspace\android\Projects\scanner\app\src\main\AndroidManifest.xml:34:13-37:29
+48                <action android:name="android.intent.action.MAIN" />
+48-->D:\workspace\android\Projects\scanner\app\src\main\AndroidManifest.xml:35:17-69
+48-->D:\workspace\android\Projects\scanner\app\src\main\AndroidManifest.xml:35:25-66
+49
+50                <category android:name="android.intent.category.LAUNCHER" />
+50-->D:\workspace\android\Projects\scanner\app\src\main\AndroidManifest.xml:36:17-77
+50-->D:\workspace\android\Projects\scanner\app\src\main\AndroidManifest.xml:36:27-74
+51            </intent-filter>
+52        </activity>
+53
+54        <!-- ML Kit metadata for better performance -->
+55        <meta-data
+55-->D:\workspace\android\Projects\scanner\app\src\main\AndroidManifest.xml:41:9-43:39
+56            android:name="com.google.mlkit.vision.DEPENDENCIES"
+56-->D:\workspace\android\Projects\scanner\app\src\main\AndroidManifest.xml:42:13-64
+57            android:value="barcode" />
+57-->D:\workspace\android\Projects\scanner\app\src\main\AndroidManifest.xml:43:13-36
+58
+59        <service
+59-->[androidx.camera:camera-camera2:1.3.1] C:\Users\TanxeStudio\.gradle\caches\transforms-3\037e0cfc16983a1b8801ebf9fc1f8fd1\transformed\jetified-camera-camera2-1.3.1\AndroidManifest.xml:24:9-33:19
+60            android:name="androidx.camera.core.impl.MetadataHolderService"
+60-->[androidx.camera:camera-camera2:1.3.1] C:\Users\TanxeStudio\.gradle\caches\transforms-3\037e0cfc16983a1b8801ebf9fc1f8fd1\transformed\jetified-camera-camera2-1.3.1\AndroidManifest.xml:25:13-75
+61            android:enabled="false"
+61-->[androidx.camera:camera-camera2:1.3.1] C:\Users\TanxeStudio\.gradle\caches\transforms-3\037e0cfc16983a1b8801ebf9fc1f8fd1\transformed\jetified-camera-camera2-1.3.1\AndroidManifest.xml:26:13-36
+62            android:exported="false" >
+62-->[androidx.camera:camera-camera2:1.3.1] C:\Users\TanxeStudio\.gradle\caches\transforms-3\037e0cfc16983a1b8801ebf9fc1f8fd1\transformed\jetified-camera-camera2-1.3.1\AndroidManifest.xml:27:13-37
+63            <meta-data
+63-->[androidx.camera:camera-camera2:1.3.1] C:\Users\TanxeStudio\.gradle\caches\transforms-3\037e0cfc16983a1b8801ebf9fc1f8fd1\transformed\jetified-camera-camera2-1.3.1\AndroidManifest.xml:30:13-32:89
+64                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+64-->[androidx.camera:camera-camera2:1.3.1] C:\Users\TanxeStudio\.gradle\caches\transforms-3\037e0cfc16983a1b8801ebf9fc1f8fd1\transformed\jetified-camera-camera2-1.3.1\AndroidManifest.xml:31:17-103
+65                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+65-->[androidx.camera:camera-camera2:1.3.1] C:\Users\TanxeStudio\.gradle\caches\transforms-3\037e0cfc16983a1b8801ebf9fc1f8fd1\transformed\jetified-camera-camera2-1.3.1\AndroidManifest.xml:32:17-86
+66        </service>
+67        <service
+67-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\09cc0fd1c9940421796a269025273082\transformed\jetified-play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:9:9-15:19
+68            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+68-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\09cc0fd1c9940421796a269025273082\transformed\jetified-play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:10:13-91
+69            android:directBootAware="true"
+69-->[com.google.mlkit:common:18.9.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\087716eca6cd14954d4956a35f4c2180\transformed\jetified-common-18.9.0\AndroidManifest.xml:17:13-43
+70            android:exported="false" >
+70-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\09cc0fd1c9940421796a269025273082\transformed\jetified-play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:11:13-37
+71            <meta-data
+71-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\09cc0fd1c9940421796a269025273082\transformed\jetified-play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:12:13-14:85
+72                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
+72-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\09cc0fd1c9940421796a269025273082\transformed\jetified-play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:13:17-120
+73                android:value="com.google.firebase.components.ComponentRegistrar" />
+73-->[com.google.android.gms:play-services-mlkit-barcode-scanning:18.3.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\09cc0fd1c9940421796a269025273082\transformed\jetified-play-services-mlkit-barcode-scanning-18.3.0\AndroidManifest.xml:14:17-82
+74            <meta-data
+74-->[com.google.mlkit:vision-common:17.3.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\bd8745398dcd892d88a39890f5340039\transformed\jetified-vision-common-17.3.0\AndroidManifest.xml:12:13-14:85
+75                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+75-->[com.google.mlkit:vision-common:17.3.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\bd8745398dcd892d88a39890f5340039\transformed\jetified-vision-common-17.3.0\AndroidManifest.xml:13:17-124
+76                android:value="com.google.firebase.components.ComponentRegistrar" />
+76-->[com.google.mlkit:vision-common:17.3.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\bd8745398dcd892d88a39890f5340039\transformed\jetified-vision-common-17.3.0\AndroidManifest.xml:14:17-82
+77            <meta-data
+77-->[com.google.mlkit:common:18.9.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\087716eca6cd14954d4956a35f4c2180\transformed\jetified-common-18.9.0\AndroidManifest.xml:20:13-22:85
+78                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+78-->[com.google.mlkit:common:18.9.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\087716eca6cd14954d4956a35f4c2180\transformed\jetified-common-18.9.0\AndroidManifest.xml:21:17-120
+79                android:value="com.google.firebase.components.ComponentRegistrar" />
+79-->[com.google.mlkit:common:18.9.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\087716eca6cd14954d4956a35f4c2180\transformed\jetified-common-18.9.0\AndroidManifest.xml:22:17-82
+80        </service>
+81
+82        <provider
+82-->[com.google.mlkit:common:18.9.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\087716eca6cd14954d4956a35f4c2180\transformed\jetified-common-18.9.0\AndroidManifest.xml:9:9-13:38
+83            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+83-->[com.google.mlkit:common:18.9.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\087716eca6cd14954d4956a35f4c2180\transformed\jetified-common-18.9.0\AndroidManifest.xml:10:13-78
+84            android:authorities="com.scanner.app.mlkitinitprovider"
+84-->[com.google.mlkit:common:18.9.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\087716eca6cd14954d4956a35f4c2180\transformed\jetified-common-18.9.0\AndroidManifest.xml:11:13-69
+85            android:exported="false"
+85-->[com.google.mlkit:common:18.9.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\087716eca6cd14954d4956a35f4c2180\transformed\jetified-common-18.9.0\AndroidManifest.xml:12:13-37
+86            android:initOrder="99" />
+86-->[com.google.mlkit:common:18.9.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\087716eca6cd14954d4956a35f4c2180\transformed\jetified-common-18.9.0\AndroidManifest.xml:13:13-35
+87
+88        <activity
+88-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\44a5d6d0a81a66f86b55d42fc5bff6c1\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+89            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+89-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\44a5d6d0a81a66f86b55d42fc5bff6c1\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+90            android:exported="false"
+90-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\44a5d6d0a81a66f86b55d42fc5bff6c1\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+91            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+91-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\44a5d6d0a81a66f86b55d42fc5bff6c1\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+92
+93        <meta-data
+93-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\ab90efbf9a6f0e45ae80bd99d810cefe\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+94            android:name="com.google.android.gms.version"
+94-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\ab90efbf9a6f0e45ae80bd99d810cefe\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+95            android:value="@integer/google_play_services_version" />
+95-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\ab90efbf9a6f0e45ae80bd99d810cefe\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+96
+97        <activity
+97-->[androidx.compose.ui:ui-test-manifest:1.5.4] C:\Users\TanxeStudio\.gradle\caches\transforms-3\914df80ced4df2a51e0a405fe5712919\transformed\jetified-ui-test-manifest-1.5.4\AndroidManifest.xml:23:9-25:39
+98            android:name="androidx.activity.ComponentActivity"
+98-->[androidx.compose.ui:ui-test-manifest:1.5.4] C:\Users\TanxeStudio\.gradle\caches\transforms-3\914df80ced4df2a51e0a405fe5712919\transformed\jetified-ui-test-manifest-1.5.4\AndroidManifest.xml:24:13-63
+99            android:exported="true" />
+99-->[androidx.compose.ui:ui-test-manifest:1.5.4] C:\Users\TanxeStudio\.gradle\caches\transforms-3\914df80ced4df2a51e0a405fe5712919\transformed\jetified-ui-test-manifest-1.5.4\AndroidManifest.xml:25:13-36
+100        <activity
+100-->[androidx.compose.ui:ui-tooling-android:1.5.4] C:\Users\TanxeStudio\.gradle\caches\transforms-3\fca5bac008113e5d65f26c79ae17c40d\transformed\jetified-ui-tooling-release\AndroidManifest.xml:23:9-25:39
+101            android:name="androidx.compose.ui.tooling.PreviewActivity"
+101-->[androidx.compose.ui:ui-tooling-android:1.5.4] C:\Users\TanxeStudio\.gradle\caches\transforms-3\fca5bac008113e5d65f26c79ae17c40d\transformed\jetified-ui-tooling-release\AndroidManifest.xml:24:13-71
+102            android:exported="true" />
+102-->[androidx.compose.ui:ui-tooling-android:1.5.4] C:\Users\TanxeStudio\.gradle\caches\transforms-3\fca5bac008113e5d65f26c79ae17c40d\transformed\jetified-ui-tooling-release\AndroidManifest.xml:25:13-36
+103
+104        <provider
+104-->[androidx.emoji2:emoji2:1.4.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\99fc23a2e9591bf55368d456ea67e997\transformed\jetified-emoji2-1.4.0\AndroidManifest.xml:24:9-32:20
+105            android:name="androidx.startup.InitializationProvider"
+105-->[androidx.emoji2:emoji2:1.4.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\99fc23a2e9591bf55368d456ea67e997\transformed\jetified-emoji2-1.4.0\AndroidManifest.xml:25:13-67
+106            android:authorities="com.scanner.app.androidx-startup"
+106-->[androidx.emoji2:emoji2:1.4.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\99fc23a2e9591bf55368d456ea67e997\transformed\jetified-emoji2-1.4.0\AndroidManifest.xml:26:13-68
+107            android:exported="false" >
+107-->[androidx.emoji2:emoji2:1.4.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\99fc23a2e9591bf55368d456ea67e997\transformed\jetified-emoji2-1.4.0\AndroidManifest.xml:27:13-37
+108            <meta-data
+108-->[androidx.emoji2:emoji2:1.4.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\99fc23a2e9591bf55368d456ea67e997\transformed\jetified-emoji2-1.4.0\AndroidManifest.xml:29:13-31:52
+109                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+109-->[androidx.emoji2:emoji2:1.4.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\99fc23a2e9591bf55368d456ea67e997\transformed\jetified-emoji2-1.4.0\AndroidManifest.xml:30:17-75
+110                android:value="androidx.startup" />
+110-->[androidx.emoji2:emoji2:1.4.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\99fc23a2e9591bf55368d456ea67e997\transformed\jetified-emoji2-1.4.0\AndroidManifest.xml:31:17-49
+111            <meta-data
+111-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\TanxeStudio\.gradle\caches\transforms-3\cf3f3869de5f7c68c6cebc0152252448\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+112                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+112-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\TanxeStudio\.gradle\caches\transforms-3\cf3f3869de5f7c68c6cebc0152252448\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+113                android:value="androidx.startup" />
+113-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\TanxeStudio\.gradle\caches\transforms-3\cf3f3869de5f7c68c6cebc0152252448\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+114            <meta-data
+114-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\cc1bb7910e52ee0da775d1ddb03c84ca\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+115                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+115-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\cc1bb7910e52ee0da775d1ddb03c84ca\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+116                android:value="androidx.startup" />
+116-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\cc1bb7910e52ee0da775d1ddb03c84ca\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+117        </provider>
+118
+119        <receiver
+119-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\cc1bb7910e52ee0da775d1ddb03c84ca\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+120            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+120-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\cc1bb7910e52ee0da775d1ddb03c84ca\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+121            android:directBootAware="false"
+121-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\cc1bb7910e52ee0da775d1ddb03c84ca\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+122            android:enabled="true"
+122-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\cc1bb7910e52ee0da775d1ddb03c84ca\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+123            android:exported="true"
+123-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\cc1bb7910e52ee0da775d1ddb03c84ca\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+124            android:permission="android.permission.DUMP" >
+124-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\cc1bb7910e52ee0da775d1ddb03c84ca\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+125            <intent-filter>
+125-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\cc1bb7910e52ee0da775d1ddb03c84ca\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+126                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+126-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\cc1bb7910e52ee0da775d1ddb03c84ca\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+126-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\cc1bb7910e52ee0da775d1ddb03c84ca\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+127            </intent-filter>
+128            <intent-filter>
+128-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\cc1bb7910e52ee0da775d1ddb03c84ca\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+129                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+129-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\cc1bb7910e52ee0da775d1ddb03c84ca\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+129-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\cc1bb7910e52ee0da775d1ddb03c84ca\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+130            </intent-filter>
+131            <intent-filter>
+131-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\cc1bb7910e52ee0da775d1ddb03c84ca\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+132                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+132-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\cc1bb7910e52ee0da775d1ddb03c84ca\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+132-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\cc1bb7910e52ee0da775d1ddb03c84ca\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+133            </intent-filter>
+134            <intent-filter>
+134-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\cc1bb7910e52ee0da775d1ddb03c84ca\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+135                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+135-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\cc1bb7910e52ee0da775d1ddb03c84ca\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+135-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\TanxeStudio\.gradle\caches\transforms-3\cc1bb7910e52ee0da775d1ddb03c84ca\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+136            </intent-filter>
+137        </receiver>
+138
+139        <service
+139-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\TanxeStudio\.gradle\caches\transforms-3\b7bfef6339a1d0a36ad7f266a0e280c4\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
+140            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+140-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\TanxeStudio\.gradle\caches\transforms-3\b7bfef6339a1d0a36ad7f266a0e280c4\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
+141            android:exported="false" >
+141-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\TanxeStudio\.gradle\caches\transforms-3\b7bfef6339a1d0a36ad7f266a0e280c4\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
+142            <meta-data
+142-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\TanxeStudio\.gradle\caches\transforms-3\b7bfef6339a1d0a36ad7f266a0e280c4\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
+143                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+143-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\TanxeStudio\.gradle\caches\transforms-3\b7bfef6339a1d0a36ad7f266a0e280c4\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
+144                android:value="cct" />
+144-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\TanxeStudio\.gradle\caches\transforms-3\b7bfef6339a1d0a36ad7f266a0e280c4\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
+145        </service>
+146        <service
+146-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\TanxeStudio\.gradle\caches\transforms-3\a16625e8f28e41bdd8d0a5b18d42fddc\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:26:9-30:19
+147            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+147-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\TanxeStudio\.gradle\caches\transforms-3\a16625e8f28e41bdd8d0a5b18d42fddc\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:27:13-117
+148            android:exported="false"
+148-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\TanxeStudio\.gradle\caches\transforms-3\a16625e8f28e41bdd8d0a5b18d42fddc\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:28:13-37
+149            android:permission="android.permission.BIND_JOB_SERVICE" >
+149-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\TanxeStudio\.gradle\caches\transforms-3\a16625e8f28e41bdd8d0a5b18d42fddc\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:29:13-69
+150        </service>
+151
+152        <receiver
+152-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\TanxeStudio\.gradle\caches\transforms-3\a16625e8f28e41bdd8d0a5b18d42fddc\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:32:9-34:40
+153            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+153-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\TanxeStudio\.gradle\caches\transforms-3\a16625e8f28e41bdd8d0a5b18d42fddc\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:33:13-132
+154            android:exported="false" />
+154-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\TanxeStudio\.gradle\caches\transforms-3\a16625e8f28e41bdd8d0a5b18d42fddc\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:34:13-37
+155    </application>
+156
+157</manifest>
